@@ -14,7 +14,8 @@ const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent,
-        pathMatch: 'full'
+        pathMatch: 'full',
+        data: { title: 'Login' }
     },
     {
         path: 'dashboard',
@@ -22,7 +23,8 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                component: DashboardComponent
+                component: DashboardComponent,
+                data: { title: 'Dashboard' }
             },
         ]
     }
